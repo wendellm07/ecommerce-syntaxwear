@@ -1,0 +1,67 @@
+/* Reset CSS — baseado no "modern reset" do Andy Bell */
+/* Uso: importe este arquivo antes dos seus estilos base */
+
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remover margens padrão de elementos não multimídia */
+:where(:not(html, iframe, canvas, img, svg, video, audio, picture, pre, code) *) {
+  margin: 0;
+}
+
+/* Altura base e suavização de fontes */
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remover estilos de lista quando usar role=list */
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+}
+
+/* Links sem decoração por padrão */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Imagens responsivas e blocos de mídia */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Formularios herdam a fonte do pai */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Tabelas: colapso de bordas por padrão */
+table {
+  border-collapse: collapse;
+}
+
+/* Respeitar preferência de reduzir animações */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Pequenos utilitários úteis por padrão */
+:where(button, [type="button"], [type="submit"]) {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
