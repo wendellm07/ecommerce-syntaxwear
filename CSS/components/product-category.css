@@ -21,25 +21,6 @@
     background-color: rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
-.btn-card {
-    background: transparent;
-    border: 2px solid #ffffff;
-    line-height: 28px;
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 1.25rem;
-    color: #ffffff;
-    width: 153px;
-    height: 48px;
-    line-height: 40px;
-    transition: background-color 0.3s, border 0.3s;
-}
-
-.btn-card:hover{
-    background-color: #6329a2;
-    color: #ffffff;
-    border-color: #6329a2;
-} 
 
 .category-name {
     position: absolute;
@@ -55,7 +36,7 @@
     background-size: cover;
 }
 
-.esporte{
+.esporte {
     background: url(../../images/products/twnia\ exportivo.jpg) no-repeat center;
     background-size: cover;
 }
@@ -69,4 +50,3 @@
     background: url(../../images/products/tênis\ futurista.jpg) no-repeat center;
     background-size: cover;
 }
-
